@@ -1,0 +1,62 @@
+.hdr{
+    text-align: center;
+    background-color: #ff408f;
+    height: 256px;
+    margin-top: -18px;
+    background-image: url('https://wallpapersite.com/images/pages/pic_w/204.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 1400px;
+    width: 100%;
+  }
+.example-full-width {
+    width: 68%;
+  }
+.hdr1{
+    text-align: center;
+}
+.srchsec{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);;
+    margin-top: 4px;
+}
+table {
+    width: 100%;
+    margin-top: -17px;
+  }
+
+  .mt20{
+    margin-top: 20px;
+
+  }
+  .no_pad{
+    padding-left:0 !important;
+    padding-right: 0 !important; 
+  }
+  .geo_table thead{
+    background: #3936f4;
+    color: #ffffffd1;
+}
+.geo_table th {
+	font-size: 16px;
+} 
+
+.geo_table tr{
+    background: #cccbcb54;
+    font-size: 11px;
+ 
+}
+.geo_table th,td{
+	   padding: 6px 7px 5px 15px;
+}
+.tblrow{
+    font-size: 16px;
+  }
+  .tbldata{
+    text-align: center;
+    font-size: 14px;
+  }

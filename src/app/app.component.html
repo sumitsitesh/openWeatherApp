@@ -1,0 +1,45 @@
+<div class=" col-lg-12 hdr">
+<h1 class="hdr1">
+  Find the weather of your city
+</h1 >
+</div>
+<div class=" col-xs-12 srchsec">
+<form class="example-form">
+  <!-- <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter City Name"  name="name" [(ngModel)]="name" [value]="name" >
+  </mat-form-field> -->
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Enter City Name"  name="name" [(ngModel)]="name" [value]="name" >
+  </mat-form-field>
+  &nbsp;
+  <button mat-raised-button color="primary" (click)="findWeather()">Search</button>
+  </form>
+</div>
+
+<div class="table_class col-xs-12 mt20 no_pad pull-left " >	
+  <table class="geo_table col-xs-12" *ngIf="showTbl">
+              <thead class=" col-xs-12">
+                <tr>
+                    <th class = "tblrow">Date:Time</th>
+                  <th class = "tblrow">Temperature</th>
+                  <!-- <th class = "tblrow">Max Temp</th> -->
+                  <th class = "tblrow">Description</th>
+                  <th class = "tblrow">Humidity</th>
+                 
+                </tr>
+              </thead>
+              <tbody class=" col-xs-12">
+                <tr *ngFor="let wtr of Weather">
+                  <td class="tbldata">{{wtr.dt_txt}}</td>
+                  <td class="tbldata">{{wtr.main.temp}}K</td>
+                  <!-- <td class="tbldata">{{wtr.main.temp_max}}K</td> -->
+                  <td class="tbldata">{{wtr.weather[0].description}}</td>
+                  <td class="tbldata">{{wtr.main.humidity}}</td>
+                  
+                  
+                </tr>
+  
+              </tbody>
+            </table>
+  </div>
+
